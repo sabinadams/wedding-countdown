@@ -44,7 +44,9 @@ function App() {
       <header className="App-header">
         <div className="infoContainer">
           <h2 className="count">{ format === 'number' ? untilValues[displayKey] : `${Math.floor(progress)}%` }</h2>
-
+          {
+            format !== 'number' && <p>From engagement to wedding</p>
+          }
           {
             format === 'number' && <>
               <p>{displayKey} until March 21!</p>
